@@ -16,7 +16,8 @@ const forecast = (latitude, longitude, callback) => {
                 '. It is currently ' + body.current.temperature + 
                 ' Celsius degrees in '+ body.location.name + 
                 ' - ' + body.location.region + ' - ' + body.location.country + 
-                '. It feels like ' + body.current.feelslike + ' degrees.'
+                '. It feels like ' + body.current.feelslike + ' degrees. And the humidity is '
+                + body.current.weather_descriptions[0].humidity + '%.'
             )
         }
     })
