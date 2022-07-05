@@ -7,7 +7,7 @@ weatherForm.addEventListener('submit', (e) => {
     e.preventDefault() //previne form de recarregar a página quando enviada
     const location = searchElement.value
 
-    message1.textContent = "loading..."
+    message1.textContent = "loading...."
     message2.textContent = ""
 
     fetch('http://localhost:3000/weather?address='+location).then((response) => {
